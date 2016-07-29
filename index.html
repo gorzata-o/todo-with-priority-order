@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>What toDO first</title>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+</head>
+<body ng-app="toDoApp">
+	<div class="todo" ng-controller="mainController">
+		<h2>What should you do first out of <span class="todos-length"> {{ todos.length }} </span> things to be done?</h2>
+		<ul>
+			<li class="list color-{{todo.priority}}" ng-repeat="todo in todos | orderBy:'priority'">
+				<div id="checkbox">
+					<input class="checkbox" type="checkbox" ng-model="todo.done"/>
+					<label></label>
+				</div>
+				<span class="done-{{todo.done}}"> {{ todo.text }} </span>
+				<span class="priority done-{{todo.done}}"> Priority: {{ todo.priority }} </span>
+			</li>
+		</ul>
+	
+	<form ng-submit="$scope.addTodo()">
+		<input type="text" class="todo-input" placeholder="What else?" ng-model="formTodo">
+		<input type="number" min="1" max="3" class="priority-input" ng-model="formPriority">
+		<button class="addBtn" ng-click="addTodo()">Add</button>
+	</form>
+
+	<button class="clearBtn" ng-click="clearDone()">Clear done tasks</button>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

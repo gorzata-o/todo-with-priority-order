@@ -1,0 +1,38 @@
+#checkbox {
+    position: relative;
+    width: 100px;
+    margin: 5px;
+}
+.checkbox {
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 2;
+}
+
+.checkbox + label{ 
+    background:url('../images/checkbox.png') no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 1;
+}
+
+.checkbox:checked + label{
+    background:url('../images/checkbox.png') no-repeat;
+    background-size: cover;
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
