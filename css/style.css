@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Shadows Into Light Two', cursive; }
+
+textarea:focus, input:focus {
+  outline: none;
+  box-shadow: 0; }
+
+#checkbox {
+  position: relative;
+  width: 100px;
+  margin: 5px; }
+
+.checkbox {
+  opacity: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 2; }
+
+.checkbox + label {
+  background: url("../images/checkbox.png") no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 1; }
+
+.checkbox:checked + label {
+  background: url("../images/checkbox.png") no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  padding: 0 0 0 0px; }
+
+h2 {
+  text-align: center;
+  color: #fdb59c; }
+
+.color-1 {
+  background-color: #ffc7ac; }
+
+.color-2 {
+  background-color: #8b6456; }
+
+.color-3 {
+  background-color: #5d4239; }
+
+.list {
+  list-style-type: none;
+  color: #13281c;
+  line-height: 4em;
+  font-size: 3em;
+  display: flex; }
+
+span {
+  margin-left: 20px; }
+
+.done-true {
+  text-decoration: line-through;
+  color: #7f5b4e; }
+
+.todos-length {
+  font-size: 2em; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  form input {
+    width: 30%;
+    line-height: 2.5em;
+    font-size: 1.8em;
+    margin: 10px auto;
+    border: 2px solid #7f5b4e; }
+    form input:focus {
+      border: 3px solid #fdb59c;
+      shadow-box: 0; }
+  form .addBtn {
+    line-height: 2.5em;
+    font-size: 1.8em;
+    width: 30%;
+    color: #fdb59c;
+    margin: 10px auto;
+    background-color: #7f5b4e;
+    border: 1px solid #7f5b4e; }
+    form .addBtn:hover {
+      background-color: #fdb59c;
+      border: 1px solid #fdb59c;
+      color: #7f5b4e; }
+
+.clearBtn {
+  width: 100%;
+  line-height: 3em;
+  font-size: 2em;
+  color: #fdb59c;
+  background-color: #7f5b4e;
+  border: 1px solid #7f5b4e; }
+  .clearBtn:hover {
+    background-color: #fdb59c;
+    color: #7f5b4e;
+    border: 1px solid #fdb59c; }

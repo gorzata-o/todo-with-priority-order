@@ -1,0 +1,26 @@
+{
+  "name": "bower_components",
+  "homepage": "https://github.com/gorzata-o/WAR_FRO_S_09_SASS_RWD",
+  "authors": [
+    "gorzata-o <gorzata.olechniewicz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery-mobile": "^1.4.5",
+    "animate.css": "^3.5.2"
+  },
+  "resolutions": {
+    "jquery-ui": "^1.12.0",
+    "jquery": "^3.1.0"
+  }
+}
